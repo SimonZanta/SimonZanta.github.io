@@ -1,0 +1,262 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	color: #fffbfe;
+
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-auto-rows: auto;
+	grid-row-gap: 40px;
+}
+#mainStyle *{
+	background-color: #00487c;
+}
+
+.header{
+	font-size: 3em;
+	font-weight: bold;
+
+	padding-bottom: 5vh;
+	text-transform: uppercase;
+}
+
+.obsahWGrid *, .obsah * {
+	font-weight: 1;
+	}
+
+span{
+	font-weight: bold !important; 
+	color: #ef6461;
+}
+
+.PartOfSite{
+	padding-top: 5vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+/*navbar -----------------------------------------------------------------------*/
+
+#navbar{
+	/*display: flex;
+	position: fixed;*/
+	top: 0;
+	height: 5vh;
+	background-color: #00487c;
+	padding-top: 1vh;
+	overflow: hidden;
+	font-size: 1em;
+	text-align: center;
+	padding-bottom: 1vh;
+}
+
+
+
+#navContejner{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 75vw repeat(3, auto);
+}
+
+#navAbout{
+	grid-column: 2/3;
+}
+
+#navProj{
+	grid-column: 3/4;
+	border-left: 2px solid black;
+}
+
+#navContacts{
+	grid-column: 4/5;
+	border-left: 2px solid black;
+}
+
+
+/*welcome section -----------------------------------------------------------------------*/
+
+#welcome-section{
+height: 95vh;
+padding-left: 20vw;
+}
+#hi{
+	font-size: 10em;
+}
+#myName{
+	font-size: 2em;
+}
+
+#name{
+	padding-top: 5vh;
+	font-size: 13em;
+}
+.dot{
+	height: 3vh;
+  	width: 3vh;
+  	background-color: #ef6461 !important;
+  	border-radius: 50%;
+  	display: inline-block;
+}
+
+/*about section -----------------------------------------------------------------------*/
+
+#about{
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+.wrapper{
+	display: grid;
+	grid-template-rows: repeat(3, minmax(30vh, auto)); 
+	grid-row-gap: 1vw;
+	
+}
+
+
+.skillLeft{
+	border-left: 6px solid #fffbfe;
+	padding-left: 2vw;
+}
+.skillRight{
+	border-right: 6px solid #fffbfe;
+	text-align: right;
+	padding-right: 2vw;
+}
+
+.obsah p{
+	padding-bottom: 2vh;
+}
+
+.obsahWGrid{
+	display: grid;
+	grid-template-columns: auto 10vw;
+}
+
+#date p{
+	text-align: left;
+	padding-bottom: 2vh;
+	padding-left: 1vw;
+}
+
+/*project section -----------------------------------------------------------------------*/
+
+#projects{
+	padding-left: 10vw;
+	padding-right: 10vw;
+
+}
+#projectWrapper{
+	display: grid;
+	grid-template-columns:repeat(2, 20vw 10vw) 20vw;
+	grid-template-rows: 40vh; 
+	padding-bottom: 5vh;
+	
+}
+
+.project-tile{	
+	grid-column: 1/2;
+	grid-row: 1/2;
+	display: grid;
+	grid-template-rows: 70% 30%;
+}
+
+.project-tile2{
+	grid-column: 3/4;
+	grid-row: 1/2;
+	display: grid;
+	grid-template-rows: 70% 30%;
+	background-image: url("/pics/backgroundCenter.png");
+	
+}
+.project-tile2 a{
+	align-items: center;
+
+}
+.project-tile3{
+	grid-column: 6/7;
+	grid-row: 1/2;
+	color: red;
+}
+/*.anotherProjects{
+	grid-column: 2/7;
+	grid-row: 1/2;
+	padding-right: 50px;
+	text-align: right;
+}*/
+.imgTitle{
+	font-size: 1.2em;
+	padding-top: 0.3em;
+	grid-row: 2/3;
+}
+
+.img{
+	grid-row: 1/2;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+
+
+}
+/*.img img{
+	height: 100%;
+
+  }*/
+
+
+/*contacts -----------------------------------------------------------------------*/
+
+#contacts{
+	padding-left: 10vw;
+	padding-right: 10vw;
+}
+
+#contWrap{
+	display: grid;
+	grid-template-columns: repeat(2, 20vw); 
+	grid-template-rows: 30vh;
+	padding-bottom: 5vh;
+	text-align: center;
+	margin: auto;
+	align-items: center;
+	padding-left: 20vw;
+	padding-right: 20vw;
+}
+.contact a{
+	font-size: 2em;
+	font-weight: bold;
+}
+#contactsHeader{
+	text-align: center;
+}
+
+
+
+/*footer section -----------------------------------------------------------------------*/
+
+#footer{
+	height: 4vh;
+	background-color: #002f52;
+}
+
+/*mediaQeries -----------------------------------------------------------------------*/
+
+@media (max-width:  1200px){
+	*{
+		font-size: 16px;
+	}
+}
